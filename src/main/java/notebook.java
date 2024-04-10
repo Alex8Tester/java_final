@@ -29,5 +29,13 @@ public class notebook {
         return list;
     }
 
+    @Override
+    public String toString() {
+        return "notebook: (" + name + "): " +
+                "ram:" + ram +
+                ", os: " + os +
+                ", price: " + price +
+                ", model: " + model;
+    }
 
 }
