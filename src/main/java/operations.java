@@ -45,12 +45,12 @@ public class operations {
         }
         return true;
     }
-    public OperationWithNotebook(Set<notebook> notebooks) {
+    public operations(Set<notebook> notebooks) {
         this.scanner = new Scanner(System.in);
         this.notebooks = notebooks;
     }
 
-    public OperationWithNotebook(Set<notebook> notebooks, List<criteria> searchCriteria) {
+    public operations(Set<notebook> notebooks, List<Criteria> searchCriteria) {
         this.scanner = new Scanner(System.in);
         this.notebooks = notebooks;
         this.searchCriteria = searchCriteria;
@@ -85,8 +85,8 @@ public class operations {
         Map<String, String> map = new HashMap<>();
 
         map.put("name", "Name");
-        map.put("amountRAM", "Size Ram");
-        map.put("operatingSystem", "Operation System");
+        map.put("ram", "Size Ram");
+        map.put("os", "Operation System");
         map.put("price", "Price");
         map.put("model", "Model of notebook");
 
