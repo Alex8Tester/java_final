@@ -156,12 +156,12 @@ public class operations {
                     continue;
                 }
                 String property = properties.get(criteria - 1);
-                criteria criteriaObject = null;
+                Criteria criteriaObject = null;
                 try {
                     if (quantitativeSelection().contains(property)){
-                        criteriaObject = criteria.startOperation(scanner, property, true);
+                        criteriaObject = Criteria.startOperation(scanner, property, true);
                     }else {
-                        criteriaObject = criteria.startOperation(scanner, property, false);
+                        criteriaObject = Criteria.startOperation(scanner, property, false);
                     }
                 }catch (Exception e){
                     System.out.println("Error in added value");
