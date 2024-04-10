@@ -238,5 +238,4 @@ class Criteria {
             String getValue = scanner.next();
             return new Criteria(property, isQuantitative, getValue, null, null);
         }
-    }
 }
