@@ -14,11 +14,12 @@ public class notebook {
         this.price = price;
         this.model = model;
     }
-    public boolean validateObject(){
+
+    public boolean validateObject() {
         return true;
     }
 
-    public static List<String> searchProperties(){
+    public static List<String> searchProperties() {
         List<String> list = new ArrayList<>();
         list.add("ram");
         list.add("os");
@@ -76,6 +77,4 @@ public class notebook {
     public void setModel(String model) {
         this.model = model;
     }
-
-
 }
